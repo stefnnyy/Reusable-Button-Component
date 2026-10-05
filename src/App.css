@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+  gap: 64px;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -5%;
+}

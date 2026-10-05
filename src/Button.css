@@ -1,0 +1,112 @@
+body {
+  font-family: "CircularStd", sans-serif;
+  font-weight: 400; /* Automatically loads CircularStd-Book */
+}
+
+:root {
+  /* SURAFACE COLORS */
+  --surface-background: #e6e6e7;
+  --surface-primary: #c4503e;
+  --surface-error-primary: #db2350;
+  --surface-error-secondary: #fee5e8;
+  --surface-secondary: #fae9e6;
+  --surface-white: #ffffff;
+
+  /* TEXT COLORS */
+  --text-headings: #262527;
+  --text-body: #4f4d51;
+  --text-action: #c4503e;
+  --text-action-hover: #a44031;
+  --text-disabled: #87858b;
+  --text-error: #db2350;
+  --text-accent: #a4508b;
+  --text-on-action-primary: #fcf5f4;
+  --text-on-action-secondary: #c4503e;
+
+  /* BORDER COLORS */
+  --default-primary: #c4503e;
+  --default-secondary: #a44031;
+  --error-primary: #db2350;
+  --error-secondary: #b91743;
+
+  /* BASIC BUTTON STYLE */
+  .button {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    outline: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    height: 48px;
+  }
+}
+
+/* ICON ONLY */
+.button--icon-only {
+  padding: 12px;
+}
+
+/* PRIMARY BUTTON STYLE */
+.button--primary {
+  background: var(--surface-primary);
+  border: 2px solid var(--default-secondary);
+  color: var(--text-on-action-primary);
+}
+
+/* SECONDARY BUTTON STYLE */
+.button--secondary {
+  background: var(--surface-secondary);
+  color: var(--text-on-action-secondary);
+  border: none;
+}
+
+/* OUTLINE BUTTON STYLE */
+.button--outline {
+  background: var(--surface-white);
+  color: var(--text-action);
+  border: 2px solid var(--default-primary);
+}
+
+/* LINK BUTTON STYLE */
+.button--link {
+  padding: 0px;
+  background: var(--surface-white);
+  color: var(--text-action);
+  border: none;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* DESTRUCTIVE BUTTON STYLE */
+.button--destructive.button--primary {
+  background: var(--surface-error-primary);
+  color: var(--text-on-action-primary);
+  border: 2px solid var(--error-secondary);
+}
+
+.button--destructive.button--secondary {
+  background: var(--surface-error-secondary);
+  color: var(--text-error);
+  border: none;
+}
+
+.button--destructive.button--outline {
+  background: var(--surface-white);
+  color: var(--text-error);
+  border: 2px solid var(--error-primary);
+}
+
+.button--destructive.button--link {
+  padding: 0px;
+  background: var(--surface-white);
+  color: var(--text-error);
+  border: none;
+  width: fit-content;
+  height: fit-content;
+}

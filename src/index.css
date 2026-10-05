@@ -1,0 +1,52 @@
+/* Bold Weight */
+@font-face {
+  font-family: "CircularStd";
+  src:
+    url("./assets/circular-std-font-family/CircularStd-Bold.woff2")
+      format("woff2"),
+    url("./assets/circular-std-font-family/CircularStd-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Book Weight */
+@font-face {
+  font-family: "CircularStd";
+  src:
+    url("./assets/circular-std-font-family/CircularStd-Book.woff2")
+      format("woff2"),
+    url("./assets/circular-std-font-family/CircularStd-Book.ttf")
+      format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Black Weight */
+@font-face {
+  font-family: "CircularStd";
+  src:
+    url("./assets/circular-std-font-family/CircularStd-Black.woff2")
+      format("woff2"),
+    url("./assets/circular-std-font-family/CircularStd-Black.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Medium Weight */
+@font-face {
+  font-family: "CircularStd";
+  src:
+    url("./assets/circular-std-font-family/CircularStd-Medium.woff2")
+      format("woff2"),
+    url("./assets/circular-std-font-family/CircularStd-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "CircularStd", sans-serif;
+  font-weight: 400; /* Automatically loads CircularStd-Book */
+}
